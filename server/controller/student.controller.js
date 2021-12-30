@@ -36,6 +36,7 @@ module.exports.register = async (req, res) => {
       res.status(400).send("passwords not matching");
     }
   } catch (error) {
+    console.log(error);
     res.status(400).send("Inavlid username or username already taken");
   }
 }
